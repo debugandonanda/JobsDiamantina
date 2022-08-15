@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(img/baner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+.logo{
+    width: 140px;
+    cursor: pointer;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.register-btn{
+    background: #ff5361;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.active{
+    position: relative;
+}
+.active::after{
+    content: "";
+    background: rgb(0, 0, 0);
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12px;
+    border-radius: 2px;
+}
+
+/*------------------vaga-----------------*/
+
+.house-details{
+    padding: 0 12%;
+    padding-left: 5%;
+}
+
+.house-title{
+    margin-top: 50px;
+}
+.house-title h1{
+    font-weight: 600;
+}
+.house-title i{
+    color: #ff5361;
+    font-size: 14px;
+}
+
+.gallery{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 'first first . .''first first . .';
+    margin: 20px;
+}
+.gallery div img{
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+.img-1-confif{
+    width: 100%;
+    padding-left: 5%;
+}
+.detalhes h2{
+    font-weight: 500;
+    padding-left: 5%;
+}
+.detalhes p{
+    padding-left: 5%;
+}
+.line{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    width: 100%;
+    max-width: 1400px;
+    margin: 20px 0 50px;
+}
+.verificacao{
+    margin: 30px;
+    background: #fff;
+    box-shadow: 0 0 30px rgb(0,0,0,0.3);
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 50px;
+    
+}
+.verificacao label{
+    display: block;
+}
+.verificacao div{
+    padding: 20px;
+}
+.verificacao input{
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+.verificacao button{
+    background: #ff5361;
+    border: 0;
+    outline: none;
+    color: #fff;
+    padding: 18px;
+    width: 350px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.guest-field{
+    flex: 1;
+}
+.detalhes-lista{
+    list-style: none;
+    margin: 50px 0;
+    padding-left: 4%;
+}
+.detalhes-lista li{
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #555;
+    position: relative;
+}
+.detalhes-lista li span{
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+}
+.detalhes-lista li i{
+    position: absolute;
+    top: 5px;
+    left: -40px;
+}
+.home-desc{
+    max-width: 700px;
+    margin-bottom: 50px;
+    padding-left: 4%;
+}
+.map{
+    margin: 50px;  
+}
+.map iframe{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.map h3{
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.map b{
+    display: block;
+    margin-bottom: 16px;
+}
+.host{
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+}
+.host img{
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 30px;  
+}
+.host h2{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.host i{
+    color: #ff5361;
+}
+.Entrar-Contato{
+    display: inline-block;
+    margin: 40px 0 40px 120px;
+    text-decoration: none;
+    color: #555;
+    padding: 15px 50px;
+    border: 1px solid #ff5361;
+    border-radius: 8px;
+}
+
+.footer{
+    margin: 80px 0 10px;
+    text-align: center;
+}
+.footer a{
+    text-decoration: none;
+    color: #999;
+    font-size: 22px;
+    margin: 0 10px;
+}
+.footer hr{
+    background: #999;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0;
+}
+.footer p{
+    padding-bottom: 15px;
+}
