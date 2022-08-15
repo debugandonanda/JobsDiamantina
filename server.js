@@ -4,12 +4,12 @@ var adminRouter = express.Router()
 // 2. criar rotas para ele
 // página principal (http://localhost:3000/home)
 adminRouter.get('/', (req, res) => {
-  res.send("index.html")
+  res.send(index.html)
 })
 
 // página de vaga (http://localhost:3000/home/vagas)
-adminRouter.get('/users', (req, res) => {
-  res.send('vaga.html')
+adminRouter.get('/home/vagas', (req, res) => {
+  res.send(vaga.html)
 })
 
 
